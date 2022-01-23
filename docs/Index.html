@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>fx_quadratic_equation</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="controls">
+    <a href="https://www.instagram.com/psycodes/" target="_blank">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+    <a href="https://github.com/thepsycodes" target="_blank">
+      <i class="fa-brands fa-github"></i>
+    </a>
+    <a>
+      Developed by Tausif Alam
+    </a>
+  </div>
+  <div class="description">
+    <p>
+      In algebra, a quadratic equation is any equation that can be rearranged in standard form as `ax^{2}+bx+c=0` where `x` represents an unknown, and a, b, and c represent known numbers, where `a ≠ 0`.
+      <br>
+      <center>
+        <b>`x = (-b +- sqrt(b^2 - 4ac))/(2a)`</b>
+      </center>
+      <br>
+      </p>
+    </div>
+    <!-- nature -->
+    <div class="operation">
+      <h3 id="nature">Find Nature</h3>
+      <div class="form">
+        <label>
+          Enter Coefficient of `x^2`
+        </label>
+        <br><br>
+        <input id="a_place" placeholder="enter a" type="number">
+        <br><br>
+        <label>
+          Enter Coefficient of `x`
+        </label>
+        <br><br>
+        <input id="b_place" placeholder="enter b" type="number">
+        <br><br>
+        <label>
+          Enter `c` constant
+        </label>
+        <br><br>
+        <input id="c_place" placeholder="enter c" type="number">
+        <br />
+        <p class="err" id="err"></p>
+        <br />
+        <div id="find" class="btn" onclick="findd()">
+          Find
+        </div>
+        <br>
+        <div id="result">
+          GET_RESULT
+        </div>
+        <div class="box">
+          Information
+          <br /><br />
+          In a quadratic equation, discriminant helps to determine the nature of the roots of a given quadratic equation of the form `ax^2+bx+c = 0` where `a  ≠  0`.
+          <br>
+          `D = b^2-4ac` if, <br>
+          `D > 0` {Real & Distinct root}<br> `D < 0` {No real roots}<br>
+            `D = 0` {Real and Equal roots}
+          </div>
+        </div>
+      </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=AM_CHTML"></script>
+        <script src="quad.js"></script>
+      </body>
+    </html>
